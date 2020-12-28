@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <p>All results are in the console.log. You can view it, by pressing shift+ctrl+j</p>
+        <script>
+            function multiplyOthersList(array){
+    var finalArray = [], product;
+    for(var i = 0; i < array.length; i++){
+      product = 1;
+      for(var j = 0; j < array.length; j++){
+         if(i !== j) product *= array[j];
+      }
+      finalArray.push(product);
+    }
+    return finalArray;
+}
+
+// test podaci
+var array = [3,5,6,8];
+console.log(multiplyOthersList(array));
+        </script>
+    </body>
+</html>

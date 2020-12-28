@@ -1,0 +1,35 @@
+<html>
+    <head>
+<p>All results are in the console.log. You can view it, by pressing shift+ctrl+j</p>
+    </head>
+    <body>
+        <script>
+             var reverseString = function(s) {
+     
+     if(s.length === 0) return "";
+
+     let [index,len] = [0,s.length];
+     let word = "";
+     let result = "";
+
+     while(index < len){
+         
+         while(index < len && s.charAt(index) == ' '){
+             index ++;
+         }
+
+     
+         while(index < len && s.charAt(index) !== ' '){
+             word = `${word}${s.charAt(index)}`;
+             index ++;
+         }
+      
+         result = word + ' ' + result;
+         word = "";
+     }
+     return result.trim(); 
+ };
+ console.log(reverseString("the sky is blue"));
+        </script>
+    </body>
+</html>

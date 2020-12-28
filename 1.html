@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <p>All results are in the console.log. You can view it, by pressing shift+ctrl+j</p>
+        <script>
+
+const number = parseInt(prompt('Ukucajte pozitivan ceo broj: '));
+
+
+if (number < 0) {
+    console.log('Greska! Faktorijel negativnog broja ne postoji.');
+}
+
+
+else if (number === 0) {
+    console.log(`Faktorijel broja ${number} je 1.`);
+}
+
+
+else {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact *= i;
+    }
+    console.log(`Faktorijel broja ${number} je ${fact}.`);
+}
+        </script>
+    </body>
+</html>
